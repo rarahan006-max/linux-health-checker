@@ -1,0 +1,14 @@
+[2026-10-29 14:20:42] OK: Direktori tersedia: /home/haniyah/linux-health-checker/src
+[2026-10-29 14:20:42] OK: Direktori tersedia: /home/haniyah/linux-health-checker/test
+[2026-10-29 14:20:42] OK: Direktori tersedia: /home/haniyah/linux-health-checker/logs
+[2026-10-29 14:20:42] OK: Direktori tersedia: /home/haniyah/linux-health-checker/config
+[2026-10-29 14:20:42] OK: Direktori tersedia: /home/haniyah/linux-health-checker/evidence
+[2026-10-29 14:20:42] SUCCESS: Pemeriksaan selesai untuk /home/haniyah/linux-health-checker
+[2026-10-29 14:21:12] FAIL: Input tidak valid
+[2026-10-29 14:21:34] FAIL: Direktori tidak ditemukan: /home/haniyah/direktori-tidak-ada-003
+[2026-10-29 14:22:42] OK: Direktori tersedia: /home/haniyah/linux-health-checker/src
+[2026-10-29 14:22:42] OK: Direktori tersedia: /home/haniyah/linux-health-checker/test
+[2026-10-29 14:22:43] OK: Direktori tersedia: /home/haniyah/linux-health-checker/logs
+[2026-10-29 14:22:43] OK: Direktori tersedia: /home/haniyah/linux-health-checker/config
+[2026-10-29 14:22:43] OK: Direktori tersedia: /home/haniyah/linux-health-checker/evidence
+[2026-10-29 14:22:43] SUCCESS: Pemeriksaan selesai untuk /home/haniyah/linux-health-checker

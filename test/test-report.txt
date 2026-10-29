@@ -1,0 +1,56 @@
+TEST REPORT  
+Proyek: Linux System Health Checker
+
+Test 1
+
+Skenario: Direktori proyek tersedia  
+Perintah: bash src/health-check.sh status "$HOME/linux-health-checker"
+
+Hasil aktual:
+text
+=== LINUX SYSTEM HEALTH CHECKER ===
+Waktu pemeriksaan: [waktu saat dijalankan]
+Direktori target: [path direktori proyek]
+
+[OK]      Direktori src tersedia
+[OK]      Direktori test tersedia
+[OK]      Direktori logs tersedia
+[OK]      Direktori config tersedia
+[OK]      Direktori evidence tersedia
+
+Pemeriksaan selesai.
+
+
+Exit status yang diharapkan: 0  
+Kesimpulan yang diharapkan: Berhasil, karena direktori target tersedia dan proses pemeriksaan selesai.
+
+Test 2
+
+Skenario: Aksi tidak valid  
+Perintah: bash src/health-check.sh hapus "$HOME/linux-health-checker"
+
+Hasil yang diharapkan:
+text
+ERROR: Aksi tidak dikenal: hapus
+Penggunaan:
+  src/health-check.sh status TARGET_DIRECTORY
+
+Contoh:
+  src/health-check.sh status [direktori target]
+
+
+Exit status yang diharapkan: 1  
+Kesimpulan yang diharapkan: Berhasil sebagai pengujian gagal, karena script menolak aksi yang tidak didukung dan memberikan pesan kesalahan.
+
+Test 3
+
+Skenario: Direktori tidak ditemukan  
+Perintah: bash src/health-check.sh status "$HOME/direktori-tidak-ada-003"
+
+Hasil yang diharapkan:
+text
+ERROR: Direktori tidak ditemukan: [path direktori target]
+
+
+Exit status yang diharapkan: 2  
+Kesimpulan yang diharapkan: Berhasil sebagai pengujian gagal, karena script mengenali bahwa direktori target tidak ditemukan dan mengembalikan kode error yang sesuai.
